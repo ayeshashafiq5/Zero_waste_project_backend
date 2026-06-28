@@ -1,0 +1,30 @@
+# Never copy into Docker image
+node_modules
+.git
+.gitignore
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dev tooling
+.vscode
+.idea
+*.log
+npm-debug.log*
+coverage
+.eslintcache
+
+# Tests & seeding scripts (not needed at runtime)
+tests
+scripts/seed.js
+scripts/seed-wipe.js
+
+# CI / docs
+.github
+*.md
+Dockerfile
+.dockerignore
+docker-compose*.yml
+.eslintrc.cjs
